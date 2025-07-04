@@ -15,13 +15,21 @@
             left: 350%;
             transform: translate(-50%, -50%);
         }
+
+        #black {
+            position: absolute;
+            width: 350;
+            height: 350px;
+            top: 350%;
+            left: 350%;
+            transform: translate(-50%, -50%);
     </style>
 </head>
 <body>
     <img id="bolinha" src="img/gun.png" alt="Bolinha">
 
     <script>
-        const bolinha = document.getElementById('bolinha');
+        const black = document.getElementById('black');
         let x = window.innerWidth / 2;
         let y = window.innerHeight / 2;
         const velocidade = 5;
@@ -36,8 +44,8 @@
             x = Math.max(25, Math.min(x, window.innerWidth - 25));
             y = Math.max(25, Math.min(y, window.innerHeight - 25));
 
-            bolinha.style.left = x + 'px';
-            bolinha.style.top = y + 'px';
+            black.style.left = x + 'px';
+            black.style.top = y + 'px';
         });
     </script>
 </body>
